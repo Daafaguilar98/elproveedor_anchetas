@@ -1,0 +1,31 @@
+
+  <% if @anchetum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@anchetum.errors.count, "error") %> prohibited this anchetum from being saved:</h2>
+
+      <ul>
+      <% @anchetum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <span class="obligatorio"></span>
+    <%= f.text_field :nombre, placeholder: "Nombre y apellido" %>
+    <span class="obligatorio"></span>
+  </div>
+  <div class="field">
+    <%= f.number_field :celular, placeholder: "Numero de Contacto" %>
+  </div>
+  <div class="field">
+    <%= f.text_field :direccion, placeholder: "Direccion" %>
+  </div>
+  <div class="field">
+    <input type="checkbox" name="anchetum[descripcion][]" id="campaign_channels_Folder" value="Folder" />
+    <input type="checkbox" name="anchetum[descripcion][]" id="campaign_channels_Campana" value="Campana" />
+  </div>
+  <div class="actions">
+    <%= f.submit "Te llamaremos"%>
+  </div>

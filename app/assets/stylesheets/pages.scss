@@ -1,0 +1,206 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.hero h1, .hero p{
+	color: white;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.35);
+}
+.hero h1{
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.35);
+	font-size: 80px;
+	font-weight: bold;
+}
+@media (max-width: 650px) {
+	.hero h1{
+		font-size: 45px;
+	}
+	.slide{
+		display: none !important;
+	}
+}
+@media (max-width: 1300px) {
+	.location{
+		background-image: none !important;
+		justify-content: space-around !important;
+	}
+.map-location, .location h2{
+	right: initial !important;
+}
+}
+@media (max-width: 1100px) {
+	.location{
+		flex-direction: column-reverse;
+	}
+	.footer{
+		width: 100% !important;
+		height: auto !important;
+	}
+	.map-location{
+		margin-top: 30px;
+		width: 450px;
+		height: 300px;
+	}
+}
+@media (max-width: 680px) {
+	.map-location{
+		margin-top: 65px;
+		width: 380px;
+		height: 300px;
+	}
+}
+.map-location, .location h2{
+	right: initial !important;
+}
+.hero, .location{
+	width: 100%;
+	height: 100vh;
+	display:flex;
+}
+.hero{
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-repeat: repeat-x;
+	background-size: cover;
+	background-image: url('http://www.campingelgarrofer.com/wp-content/uploads/Camping-El-Garrofer-Servicios-Mini-Market-1-1400x927.jpg');
+}
+.location{
+	align-items: center;
+	background-image: url('https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/14572898_1118416544903195_2303506788610175694_n.png?oh=58650656bbc77d5adec4239b94471fd3&oe=58F5B161');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 100% 50%;
+	color: white;
+}
+.map-location{
+	-webkit-box-shadow: 1px 1px 22px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 22px -6px rgba(0,0,0,0.75);
+	box-shadow: 1px 1px 22px -6px rgba(0,0,0,0.75);
+}
+.map-location, .location h2{
+	position: relative;
+	right: 220px;
+}
+.btn{
+	color: white;
+    text-decoration: none;
+    background-color: #f1c40f;
+    padding: 8px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border: 2px solid white;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: all 1s;
+-webkit-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.6);
+box-shadow: 0px 0px 25px -5px rgba(0,0,0,0.6);
+}
+.btn p{
+	position: relative;
+}
+.effect-btn{
+	position: absolute;
+    transform: rotate(20deg);
+    top: 0;
+    margin-top: -70px;
+    left: 0;
+    margin-left: -5px;
+    height: 200px;
+    width: 200px;
+    background-color: #e6bb0e;
+    transition: all 1s;
+}
+.btn:hover > .effect-btn{
+	margin-left: -200px;
+}
+.btn:hover{
+	transform: scale(1.1);
+-webkit-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.6);
+-moz-box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.6);
+box-shadow: 0px 0px 30px -4px rgba(0,0,0,0.6);
+}
+.login-admin{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nosotros{
+	margin-top: 61px;
+	box-sizing: border-box;
+	padding: 40px 120px;
+}
+.nosotros h1{
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+.footer{
+	width: 480px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.footer span{
+	font-size: 28px;
+	margin: 0px 5px;
+	transition: all 1s;
+	cursor: pointer;
+}
+.footer span:hover{
+	font-size: 40px;
+}
+.footer hr{
+	width: 400px;
+	margin: 15px 0px;
+}
+.footer .datos{
+	font-size: 15px;
+	line-height: 1.7;
+}
+.nosotros{
+	color: #0c202f;	
+}
+.nosotros p{
+	margin: 5px 0px 25px 0px;
+	text-align: justify;
+	line-height: 1.5;
+}
+@media (max-width: 700px) {
+	.nosotros {
+		padding: 30px 20px;
+	}
+}
+
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        height: 100vh !important;
+        width: 100% !important;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }

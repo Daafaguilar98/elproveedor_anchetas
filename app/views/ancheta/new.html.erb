@@ -1,0 +1,605 @@
+<%= form_for(@anchetum) do |f| %>
+<div class="content-anchetas">
+	<ul>
+		<li><span class="num-list">1</span>Seleciona las anchetas que te gustaria comprar</li>
+		<li><span class="num-list">2</span>Llena tus datos de contacto</li>
+		<li><span class="num-list">3</span>Te llamaremos para confirmar el pedido</li>
+	</ul>
+	<div class="meta-colombia">
+		<h4>Solo ventas para el departamento del</h4>
+		<h2>Meta - Colombia</h2><br><br>
+		<em>Envio Gratis apartir de $50.000 pesos</em>
+	</div>
+</div>
+
+<div class="anchetas">
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta1" value="ancheta1" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°1</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+			<%= image_tag("ANCHETA 1.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Vieja Bodega 2° uva 750cc</li>
+						<li>Galleta Caravana bolsa 150gr</li>
+						<li>Mermelada Dule Fresa 200dr</li>
+						<li>Masmelo Crismelos 150gr</li>
+						<li>Crakeñas Saltin ind X8 und</li>
+						<li>Salchicha Enlatada Zenu 150gr</li>
+					</ul>
+				</div>
+				<label for="ancheta1" class="carrito 1">
+				<div class="precio">$22.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta2" value="ancheta2" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°2</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA 2.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Vieja Bodega 2° uva 750cc</li>
+						<li>Galleta Caravana bolsa 150gr</li>
+						<li>Natilla Doña Perola 300gr</li>
+						<li>Masmelo Crismelos 150gr</li>
+						<li>Salsa de tomate Dule 200gr</li>
+						<li>Galleta Muuu De Leche  X18 und</li>
+						<li>Salchicha Enlatada Zenu 150gr</li>
+						<li>Atun Rallado Alamar 170gr</li>
+					</ul>
+				</div>
+				<label for="ancheta2" class="carrito 2">
+				<div class="precio">$25.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta3" value="ancheta3" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°3</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA 3.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Bohio 6° uva 750cc</li>
+						<li>Galleta Caravana Plegadiza 200gr</li>
+						<li>Natilla Doña Perola 300gr</li>
+						<li>Bon Bon Bun Surtido X24 und</li>
+						<li>Salsa de tomate Dule 200gr</li>
+						<li>Masmelo Crismelos 150gr</li>
+						<li>Duraznos El Prado 400gr</li>
+						<li>Salchicha Enlatada Zenu 150gr</li>
+						<li>Atun Rallado Alamar 170gr</li>
+					</ul>
+				</div>
+				<label for="ancheta3" class="carrito 3">
+				<div class="precio">$35.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta4" value="ancheta4" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°4</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA 4.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Poderoso 10° uva 750cc</li>
+						<li>Galleta Noche Buena 220gr</li>
+						<li>Natilla Doña perola 300gr</li>
+						<li>Buñuelo Doña Perola 300gr</li>
+						<li>Galleta Saltin 3tacos</li>
+						<li>De Todito Familiar 160gr</li>
+						<li>Masmelo Crismelos 150gr</li>
+						<li>Salsa de Tomate Toguel 200gr</li>
+						<li>Mermelada Toguel 200gr</li>
+						<li>Leche Conden Parmalat 100gr</li>
+						<li>Arequipe Alpina 220gr</li>
+						<li>Durazno El Prado 750gr</li>
+						<li>Salchicha Enlatada Zenu 150gr</li>
+					</ul>
+				</div>
+				<label for="ancheta4" class="carrito 4">
+				<div class="precio">$52.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta5" value="ancheta5" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°5</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA 5.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Santa Rita cabernet</li>
+						<li>Galleta Importada Tresor</li>
+						<li>Galleta Oreo Original</li>
+						<li>Papas Pringles Original</li>
+						<li>Crema De Avellanas Nutella</li>
+						<li>Duraznos Enlata Arcor 820gr</li>
+						<li>Barra De Caramelo Snikers</li>
+					</ul>
+				</div>
+				<label for="ancheta5" class="carrito 5">
+				<div class="precio">$90.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="ancheta6" value="ancheta6" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA N°6</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA 6.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Baileys 17° X 750ml</li>
+						<li>Deluxe Biscuits Select Lata 270gr</li>
+						<li>Kabano Bakano X 18 und</li>
+						<li>Nutella Crema/Avellanas X350gr</li>
+						<li>Snikers 52.7gr Caramelo/Mani</li>
+						<li>Pringles Original 37gr</li>
+						<li>Duraznos Enlatados Arcor 820gr</li>
+						<li>Galleta Oreo Original X12und</li>
+					</ul>
+				</div>
+				<label for="ancheta6" class="carrito 6">
+				<div class="precio">$140.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="anchetaalpinaantojos" value="anchetaalpinaantojos" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA ALPINA ANTOJOS</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA ALPINA ANTOJOS.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Queso Holandes Alpina</li>
+						<li>Arequipe Alpina 220gr</li>
+					</ul>
+				</div>
+				<label for="anchetaalpinaantojos" class="carrito 7">
+				<div class="precio">$17.350<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="anchetaalpinasuperpack" value="anchetaalpinasuperpack" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA ALPINA SUPERPACK</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA ALPINA SUPERPACK.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>1 Avena Alpina Tetrapack 1lt</li>
+						<li>1 Leche Alpina Tetrapack 1lt</li>
+						<li>1 Fruto Alpina Tetrapack 1lt</li>
+						<li>2 Alpin Tetrapack 200ml</li>
+						<li>1 Crema de leche Tetrapack 200ml</li>
+						<li>1 Arequipe con Oblea 500gr</li>
+						<li>2 Compotas alpina 113gr</li>
+						<li>3 soka Alpina 300ml</li>
+						<li>1 Mermelada Alpina 260gr</li>
+					</ul>
+				</div>
+				<label for="anchetaalpinasuperpack" class="carrito 8">
+				<div class="precio">$48.700<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="anchetaramoeconomica" value="anchetaramoeconomica" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA RAMO ECONOMICA</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA RAMO ECONOMICA.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Bohio 6° uva 750cc</li>
+						<li>Ponque Tradicional Ramo 250gr</li>
+						<li>Colaciones Surtidas Nav 240gr</li>
+						<li>Ramito 150gr X 6 und</li>
+						<li>Mini Choco Ramo 20gr X20 und</li>
+						<li>Barritas Frutos Rojos 40gr X5 und</li>
+					</ul>
+				</div>
+				<label for="anchetaramoeconomica" class="carrito 9">
+				<div class="precio">$25.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="anchetaramosuperpack" value="anchetaramosuperpack" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">ANCHETA RAMO SUPERPACK</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("ANCHETA RAMO SUPERPACK.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Poderoso 10° uva 750cc</li>
+						<li>Ponque Felicidades n Ramo 600gr</li>
+						<li>Ramito 150gr X 6 und</li>
+						<li>Mini Brownies 300gr X15 und</li>
+						<li>Crema Chocorramo 350gr</li>
+						<li>Tostaco Picante 200gr</li>
+						<li>Colaciones Surtidas Nav 240gr</li>
+					</ul>
+				</div>
+				<label for="anchetaramosuperpack" class="carrito 10">
+				<div class="precio">$40.000<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio1" value="matrimonio1" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°1</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 1.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Vieja Bodega 2° uva 750cc</li>
+						<li>Galleta Caravana bolsa 150gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio1" class="carrito 11">
+				<div class="precio">$4.786<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio2" value="matrimonio2" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°2</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 2.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Bohio 6° uva 750cc</li>
+						<li>Galleta Caravana Plegadiza 200gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio2" class="carrito 12">
+				<div class="precio">$9.233<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio3" value="matrimonio3" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°3</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 3.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Poderoso 10° uva 750cc</li>
+						<li>GAlleta Noche Buena Plegadiza 200gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio3" class="carrito 13">
+				<div class="precio">$10.386<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio4" value="matrimonio4" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°4</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 4.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Poderoso 10° Cereza 750cc</li>
+						<li>Galletas Dulces Surt Octogonal 260gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio4" class="carrito 14">
+				<div class="precio">$18.020<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio5" value="matrimonio5" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°5</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 5.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino Poderoso 10° uva 750cc</li>
+						<li>Galleta Navidad Circular 470gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio5" class="carrito 15">
+				<div class="precio">$24.726<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+
+	<input type="checkbox" name="anchetum[descripcion][]" id="matrimonio6" value="matrimonio6" style="display:none;"/>
+	<div class="ancheta">
+		<div class="encabezado">
+			<div class="nombre-ancheta">MATRIMONIO N°6</div>
+			<div class="productos">LISTA DE PRODUCTOS</div>
+		</div>
+		<div class="contenido">
+			<div class="imagen">
+				<%= image_tag("MATRIMONIO 6.png") %>
+			</div>
+			<div class="info">
+				<div class="lista">
+					<ul>
+						<li>Vino 120 Cabernet Sauvignon X 750ml</li>
+						<li>Galleta Navidad Tambor 780gr</li>
+					</ul>
+				</div>
+				<label for="matrimonio6" class="carrito 16">
+				<div class="precio">$64.738<p>Comprar</p><p style="display: none;">Comprado</p><span class="comprar-ancheta"></span></div>
+				</label>
+			</div>
+		</div>
+	</div>
+</div>
+
+<span class="ion-android-cart pedir-ancheta"><span class="pedir-ancheta-circle"></span></span>
+	<div class="ventana-emergente">
+		<div class="barra-superior"><span class="ion-backspace-outline"></span></div>
+			<h3>PIDE TU ANCHETA</h3>
+			<em>Te llamaremos apenas nos escribas<br> para verificar tu pedido...</em>
+			
+		  <% if @anchetum.errors.any? %>
+		    <div id="error_explanation">
+		      <h2><%= pluralize(@anchetum.errors.count, "error") %> prohibited this anchetum from being saved:</h2>
+
+		      <ul>
+		      <% @anchetum.errors.full_messages.each do |message| %>
+		        <li><%= message %></li>
+		      <% end %>
+		      </ul>
+		    </div>
+		  <% end %>
+
+		  <div class="field">
+		    <span class="obligatorio"></span>
+		    <%= f.text_field :nombre, placeholder: "Nombre y apellido" %>
+		  </div>
+		  <div class="field">
+		    <span class="obligatorio"></span>
+		    <%= f.number_field :celular, placeholder: "Numero de Contacto" %>
+		  </div>
+		  <div class="field">
+		    <%= f.text_field :direccion, placeholder: "Direccion" %>
+		  </div>
+		  <div class="anchetas-pedidas">
+		  	<div class="ancheta-pedida" id="1" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 1.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p><strong>Ancheta N°1</strong></p>
+		  			<p>$22.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="2" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 2.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta N°2</p>
+		  			<p>$25.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="3" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 3.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta N°3</p>
+		  			<p>$35.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="4" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 4.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta N°4</p>
+		  			<p>$52.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="5" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 5.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta N°5</p>
+		  			<p>$90.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="6" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA 6.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta N°6</p>
+		  			<p>$140.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="7" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA ALPINA ANTOJOS.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta Alpina Antojos</p>
+		  			<p>$17.350</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="8" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA ALPINA SUPERPACK.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta Alpina Superpack</p>
+		  			<p>$48.700</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="9" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA RAMO ECONOMICA.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta Ramo Economica</p>
+		  			<p>$25.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="10" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/ANCHETA RAMO SUPERPACK.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Ancheta Ramo Superpack</p>
+		  			<p>$40.000</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="11" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 1.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°1</p>
+		  			<p>$4.786</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="12" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 2.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°2</p>
+		  			<p>$9.233</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="13" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 3.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°3</p>
+		  			<p>$10.386</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="14" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 4.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°4</p>
+		  			<p>$18.020</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="15" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 5.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°5</p>
+		  			<p>$24.726</p>
+		  		</div>
+		  	</div>
+		  	<div class="ancheta-pedida" id="16" style="display: none;">
+		  		<div class="foto"><%= image_tag("SIN FONDO/MATRIMONIO 6.png") %></div>
+		  		<div class="info-ancheta-pedida">
+		  			<p>Matrimonio N°6</p>
+		  			<p>$64.738</p>
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="actions">
+		    <%= f.submit "Te llamaremos"%>
+		  </div>
+
+	</div>
+<% end %>

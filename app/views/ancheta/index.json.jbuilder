@@ -1,0 +1,1 @@
+json.array! @ancheta, partial: 'ancheta/anchetum', as: :anchetum

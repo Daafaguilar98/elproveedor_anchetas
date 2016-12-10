@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ancheta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Celular</th>
+      <th>Direccion</th>
+      <th>Ancheta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ancheta.each do |anchetum| %>
+      <tr>
+        <td><%= anchetum.nombre %></td>
+        <td><%= anchetum.celular %></td>
+        <td><%= anchetum.direccion %></td>
+        <td><%= anchetum.descripcion %></td>
+        <td><%= link_to 'Destroy', anchetum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

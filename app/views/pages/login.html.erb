@@ -1,0 +1,7 @@
+<div class="login-admin">    
+    <%= form_tag("/ancheta", method: "get") do %>
+      <%= label_tag(:clave, "clave:") %>
+      <%= password_field_tag(:clave) %>
+      <%= submit_tag("ingresar") %>
+    <% end %>
+</div>

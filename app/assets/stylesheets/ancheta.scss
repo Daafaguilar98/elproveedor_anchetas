@@ -1,0 +1,307 @@
+// Place all the styles related to the Ancheta controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+		#anchetas{
+			background-color: #2f6ab2;
+			overflow-y: initial;
+		}
+		#anchetas header{
+			position: static;
+		}
+		.anchetas{
+			width: 100%;
+			min-height: 100vh;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.encabezado{
+			width: 100%;
+			height: 32px;
+			
+			font-weight: bold;
+			color: white;
+			font-size: 17px;
+			display: flex;
+		}
+		.encabezado > div{
+			height: 100%;
+			display: flex;
+			align-items: center;
+			padding-left: 10px;
+		}
+		.nombre-ancheta{
+			width: 60%;
+		}
+		.productos{
+			width: 40%;
+		}
+		.ancheta{
+			width: 500px;
+			background-color: #69a776;
+			border-bottom: 7px solid #69a776;
+			-moz-box-shadow: 4px 4px 0 #275792;
+		    -webkit-box-shadow: 4px 4px 0 #275792;
+		    box-shadow: 4px 4px 0 #275792;
+		    margin-bottom: 20px;
+		    position: relative;
+		}
+		.contenido{
+			display: flex;
+			width: 100%;
+			height: 240px;
+		}
+		.ancheta .imagen{
+			display: flex;
+			align-items: center;
+			width: 290px;
+			height: 240px;
+			background-color: white;
+		}
+		.info{
+			width: 210px;
+			height: 100%;
+			background-color: #e8e8e8;
+		}
+		.lista{
+			width: 100%;
+			height: 80%;
+			font-size: 12px;
+			box-sizing: border-box;
+			padding: 7px 0px 0px 18px;
+			overflow-y: scroll;
+		}
+		.precio{
+			width: 100%;
+			height: 20%;
+			background-color: #97ce7f;
+			display: flex;
+			align-items: center;
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+			position: relative;
+			overflow: hidden;
+			box-sizing: border-box;
+   			padding-left: 18px;
+		}
+		ul{
+			line-height: 1.7em;
+			color: #131c23;
+		}
+		.ancheta img{
+			width: 290px;
+		}
+		.content-anchetas{
+			width: 100%;
+			padding: 20px; 
+			background-color: white;
+			box-sizing: border-box;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			margin-bottom: 15px;
+		}
+		.content-anchetas ul{
+			list-style: none;
+			
+		}
+		.content-anchetas li{
+			margin: 20px 0px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		.content-anchetas img{
+			margin-top: 15px;
+			width: 300px;
+		}
+		.num-list{
+			background-color: #275792;
+			color: white;
+			padding: 5px;
+			margin-right: 7px; 
+		}
+		.meta-colombia{
+			text-align: center;
+		}
+		.meta-colombia h2{
+			font-size: 35px;
+		}
+		@media (max-width: 650px) {
+		  .ancheta {
+		        -ms-transform: scale(0.9); /* IE 9 */
+			    -webkit-transform: scale(0.9); /* Chrome, Safari, Opera */
+			    transform: scale(0.9);
+		  }
+		}
+		@media (max-width: 550px) {
+		  .ancheta {
+		        -ms-transform: scale(0.8); /* IE 9 */
+			    -webkit-transform: scale(0.8); /* Chrome, Safari, Opera */
+			    transform: scale(0.8);
+		  }
+		}
+		@media (max-width: 450px) {
+		  .ancheta {
+		        -ms-transform: scale(0.7); /* IE 9 */
+			    -webkit-transform: scale(0.7); /* Chrome, Safari, Opera */
+			    transform: scale(0.7);
+		  }
+		}
+		.pedir-ancheta{
+			position: fixed;
+			right: 28px;
+			top: 8px;
+			color: white;
+			text-decoration: none;
+			z-index: 2;
+			font-size: 40px;
+			cursor: pointer;
+		}
+		.ventana-emergente{
+			width: 350px;
+			height: 100vh;
+			box-sizing: border-box;
+			display: flex;
+			flex-direction: column;
+            -webkit-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+            -moz-box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+			box-shadow: 0px 0px 23px -4px rgba(0,0,0,0.75);
+			position: fixed;
+			bottom: 0px;
+			right: -350px;
+			transition: all 1s;
+			padding: 30px 30px 30px 30px;
+			z-index: 3;
+			background-color: white;
+		}
+		.abierta{
+			right: 0px !important;
+		}
+		.ventana-emergente form{
+			color: gray;
+		}
+		.ventana-emergente input, .ventana-emergente textarea{
+			width: 100%;
+			border-style: none;
+			background-color: #EEE;
+			outline: none;
+			padding: 8px 13px;
+			margin-bottom: 10px;
+			box-sizing: border-box;
+		}
+		.ventana-emergente textarea{
+			height: 130px;
+			resize:none;
+		}
+		.field{
+			position: relative;
+		}
+		.obligatorio{
+			position: absolute;
+			right: 0px;
+			color: white;
+			font-weight: bold;
+		    width: 0; 
+		    height: 0; 
+		    border-left: 15px solid transparent;
+		    border-top: 15px solid red;
+		    border-bottom: 5px solid transparent; 
+		}
+		.filter-img{
+		    width: 100%;
+		    height: 500px;
+		    color: white;
+		    background: rgba(58, 33, 177, 0.65);
+		    box-sizing: border-box;
+		    padding: 40px; 
+		    display: flex;
+		    flex-direction: column;
+		    justify-content: center;
+		    align-items: center;
+		    text-align: center;
+		}
+		.filter-img h2{
+			font-family: 'Bungee', cursive;
+			font-size: 40px;
+		}
+		.barra-superior{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			font-size: 30px;
+			color: #0c202f;
+		}
+		.barra-superior span{
+			cursor: pointer;
+		}
+		@media (max-width: 700px) {
+			.ventana-emergente {
+				background-position: 50% 0%;
+				justify-content: flex-end;
+				overflow: scroll;
+			}
+		}
+		.comprar-ancheta{
+			background-color: #69a776;
+			width: 220px;
+			height: 220px;
+			position: absolute;
+			transform: rotate(28deg);
+			left: 121px;
+    		transition: all 0.7s;
+    		cursor: pointer;
+		}
+		.precio p{
+			z-index: 1;
+			position: relative;
+			right: -28px;
+			transition: all 0.7s;
+			cursor: pointer;
+		}
+		.precio:hover > .comprar-ancheta{
+			left: 0px;
+		}
+		.precio:hover > p{
+			right: 26px;
+		}
+		.comprado .comprar-ancheta{
+			background-color: #e74c3c !important;
+			left: 0px !important;
+		}
+		.comprado p{
+			right: 26px !important;
+		}
+		.anchetas-pedidas{
+			height: 500px;
+			overflow-y: scroll;
+			margin-bottom: 10px;
+		}
+		.ancheta-pedida{
+			display: flex;
+			align-items: center;
+		}
+		.info-ancheta-pedida p:last-child{
+			color: #909090;
+		}
+		.ancheta-pedida img{
+			width: 80px;
+		}
+		.pedir-ancheta-circle{
+			background: red;
+			width: 20px;
+			height: 20px;
+			right: -8px;
+			top: 3px;
+			font-size: 12px;
+			font-weight: bold;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+    		position: absolute;
+    		-webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+			border-radius: 50%;
+		}
