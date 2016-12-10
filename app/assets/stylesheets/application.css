@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  *= require jquery.fullpage
- 
+ *= require ionicons
  */
 *{
 	padding: 0px;
